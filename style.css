@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap");
+:root {
+  --primary-color: #1d1df5;
+  --text-color: #101011;
+  --secondary-color: white;
+  --subheading-color: #26282d;
+  --background-color: #d1d4d5;
+  --textiary-color: #fa1915;
+}
+
+body {
+  /**general body**/
+  background-color: #f2f2f2;
+  margin: 0em;
+  font-family: "Poppins";
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/** Mobile nav bar**/
+.navbar {
+  background: white;
+  padding: 1em;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+/** mobile nav**/
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66vw;
+  height: 100vh;
+  right: 0%;
+  top: 0%;
+  background: #01011f;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 0.5em;
+  text-align: right;
+}
+
+nav li a.hover {
+  font-weight: bold;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+a {
+  color: #2f2f30;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0em;
+  padding: 0em;
+}
+
+.list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  font-weight: lighter;
+  color: var(--text-color);
+  font-size: 1.3em;
+}
+
+.mobile-menu-close {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+/**mobile nav ends here**/
+/** Campusclub- hero section**/
+.campushero {
+  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.campushero h1 {
+  color: var(--primary-color);
+  font-size: 1.4em;
+  margin-top: 3em;
+}
+
+.campushero h1 span {
+  font-size: 0.8em;
+  color: var(--subheading-color);
+  margin-bottom: 1.4em;
+}
+
+.campushero .campus-cta {
+  color: white;
+  background-color: var(--subheading-color);
+  padding: 0.3em 0.6em;
+  border: 4px solid var(--subheading-color);
+  border-radius: 3em;
+  text-decoration: none;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.campushero img {
+  width: 80%;
+  margin-top: 1.3em;
+}
+
+/** Campusclub- about section**/
+.about {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1.2em;
+}
+
+.about ul {
+  font-size: 1em;
+  text-align: left;
+}
+
+.about h1 {
+  color: var(--primary-color);
+  font-size: 1.2em;
+}
+
+.about h3 {
+  color: var(--primary-color);
+  text-align: left;
+  margin-top: 1.3em;
+  margin-bottom: 0.2em;
+}
+
+.about p {
+  font-size: 1em;
+  margin-top: 0.1em;
+}
+
+.about .fees {
+  text-align: left;
+  margin: 1.2em;
+  margin-bottom: 1.4em;
+}
+
+.about .fees p {
+  text-align: left;
+  margin-top: .5em;
+}
+
+/** Campusclub- why section**/
+.why-campus {
+  margin-top: 1em;
+  margin-bottom: .7em;
+}
+
+.why-campus h1 {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.why-campus ul {
+  font-size: 1em;
+  text-align: left;
+}
+
+.club {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  margin-bottom: -2em;
+  margin-top: 1em;
+}
+
+.club h1 {
+  font-size: 1.6em;
+  color: var(--primary-color);
+}
+
+.club .clubinner {
+  text-align: left;
+  margin: 1em;
+}
+
+.club .clubinner p {
+  text-align: left;
+  font-size: 1em;
+}
+
+.club .clubinner span {
+  color: var(--primary-color);
+  font-size: 1.2em;
+}
+
+/** General Footer for mobile starts here**/
+/** blue wave svg footer image**/
+.wave {
+  width: 100%;
+  height: 120%;
+  margin: 0em;
+}
+
+.footer1 {
+  margin: 0em;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.footer1 .inner-footer {
+  margin: -1.5em 3em 4em 3em;
+  text-align: center;
+}
+
+.footer1 label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0em;
+  text-align: left;
+}
+
+.footer1 input {
+  background: #f2f2f2;
+  width: 100%;
+  height: 4em;
+  padding: 2em;
+  border-radius: 2em;
+  border: 1px solid var(--background-color);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: -1em 0em 2em 0em;
+}
+
+.footer1 input[type="submit"] {
+  background-color: var(--primary-color);
+  color: #f2f2f2;
+  width: 30%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  border: 4px solid var(--primary-color);
+  padding: 0.4em;
+  font-size: 1em;
+}
+
+.footer1 .map {
+  display: none;
+}
+
+.footer2 {
+  margin: 0em;
+  padding: 2em;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #f2f2f2;
+}
+
+.footer2 a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.footer2 .inner2 {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  justify-items: auto;
+  margin: 0;
+}
+
+.footer2 .inner2 div {
+  margin: 2em;
+}
+
+.footer3 {
+  margin: 0;
+  border-top: solid #aaa6a5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.1em;
+}
+
+.footer3 div {
+  display: block;
+  margin: 3em;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.2em;
+}
+
+.footer3 div a {
+  color: #aaa6a5;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer3 div span {
+  color: white;
+  background-color: black;
+  padding: 0.3em 0.6em;
+  border-radius: 3em;
+  font-family: AG Stencil;
+  margin: 0.2em 0.4em;
+}
+
+.footerlogo {
+  display: none;
+}
+
+/**Tablet mode**/
+@media only screen and (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu-close {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+    background: none;
+    position: unset;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 1em;
+    font-size: 1.2em;
+  }
+  .navbar nav ul.secondary-nav {
+    margin: 1em;
+    font-size: 1.2em;
+  }
+  .navbar nav li.current {
+    font-weight: bold;
+  }
+  .navbar nav li.register a {
+    color: var(--textiary-color);
+    border: 3px solid none;
+    border-radius: 5em;
+    font-weight: bold;
+    margin-top: -0.4em;
+    padding: 0.6em 1em;
+    background: white;
+    text-decoration: none;
+    text-align: center;
+    -webkit-box-shadow: 0 4px 8px 0 grey;
+            box-shadow: 0 4px 8px 0 grey;
+    display: inline-block;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .navbar nav li.register a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+  .footerlogo {
+    display: contents;
+  }
+  footer {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .inner2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 2em 3em;
+  }
+  .footer3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+  .footer3 a {
+    margin: 0.6em 1.2em;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 60%;
+  }
+  .footer3 span {
+    margin-left: 0.3em;
+  }
+  .footer3 br {
+    display: none;
+  }
+  .contact2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact2 div {
+    width: 60;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap");
+
+:root {
+  --primary-color: #1d1df5;
+  --text-color: #101011;
+  --secondary-color: white;
+  --subheading-color: #26282d;
+  --background-color: #d1d4d5;
+  --textiary-color: #fa1915;
+}
+
+body { /**general body**/
+  background-color: #f2f2f2;
+  margin: 0em;
+  font-family: "Poppins";
+  align-content: center;
+  box-sizing: border-box;
+}
+
+/** Mobile nav bar**/
+.navbar {
+  background: white;
+  padding: 1em;
+  width: 100%;
+  box-sizing: border-box;
+
+  nav {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    place-content: space-between;
+  }
+
+  .mobile-menu {
+    cursor: pointer;
+  }
+}
+/** mobile nav**/
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66vw;
+  height: 100vh;
+  right: 0%;
+  top: 0%;
+  background: #01011f;
+  padding: 1em;
+
+  ul.primary-nav {
+    margin-top: 5em;
+  }
+
+  li {
+    a {
+      color: white;
+      display: block;
+      text-decoration: none;
+      font-size: 1.2em;
+      padding: 0.5em;
+      text-align: right;
+
+      &.hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+a {
+  color: #2f2f30;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0em;
+  padding: 0em;
+}
+
+.list {
+  align-items: center;
+  text-align: left;
+  font-weight: lighter;
+  color: var(--text-color);
+  font-size: 1.3em;
+}
+
+.mobile-menu-close {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+/**mobile nav ends here**/
+
+/** Campusclub- hero section**/
+.campushero {
+  width: 100%;
+  align-content: center;
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin-top: 1em;
+
+  h1 {
+    color: var(--primary-color);
+    font-size: 1.4em;
+    margin-top: 3em;
+
+    span {
+      font-size: 0.8em;
+      color: var(--subheading-color);
+      margin-bottom: 1.4em;
+    }
+  }
+
+  .campus-cta {
+    color: white;
+    background-color: var(--subheading-color);
+    padding: 0.3em 0.6em;
+    border: 4px solid var(--subheading-color);
+    border-radius: 3em;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 1em;
+  }
+
+  img {
+    width: 80%;
+    margin-top: 1.3em;
+  }
+}
+/** Campusclub- about section**/
+.about {
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  margin: 1.2em;
+
+  ul {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  h1 {
+    color: var(--primary-color);
+    font-size: 1.2em;
+  }
+
+  h3 {
+    color: var(--primary-color);
+    text-align: left;
+    margin-top: 1.3em;
+    margin-bottom: 0.2em;
+  }
+
+  p {
+    font-size: 1em;
+    margin-top: 0.1em;
+  }
+  .fees {
+    text-align: left;
+    margin: 1.2em;
+    margin-bottom: 1.4em;
+
+    p {
+      text-align: left;
+      margin-top: .5em;
+    }
+  }
+}
+
+/** Campusclub- why section**/
+.why-campus {
+  margin-top: 1em;
+  margin-bottom: .7em;
+  h1 {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    text-align: center;
+  }
+  ul {
+    font-size: 1em;
+    text-align: left;
+  }
+}
+
+.club {
+  align-content: center;
+  text-align: center;
+  margin-bottom: -2em;
+  margin-top: 1em;
+
+  h1 {
+    font-size: 1.6em;
+    color: var(--primary-color);
+  }
+
+  .clubinner {
+    text-align: left;
+    margin: 1em;
+
+    p {
+      text-align: left;
+      font-size: 1em;
+    }
+
+    span {
+      color: var(--primary-color);
+      font-size: 1.2em;
+    }
+  }
+}
+
+/** General Footer for mobile starts here**/
+
+/** blue wave svg footer image**/
+.wave { 
+  width: 100%;
+  height: 120%;
+  margin: 0em;
+}
+
+.footer1 {
+  margin: 0em;
+  align-content: center;
+  
+  .inner-footer {
+    margin: -1.5em 3em 4em 3em;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0em;
+    text-align: left;
+  }
+  
+  input {
+    background: #f2f2f2;
+    width: 100%;
+    height: 4em;
+    padding: 2em;
+    border-radius: 2em;
+    border: 1px solid var(--background-color);
+    box-sizing: border-box;
+    margin: -1em 0em 2em 0em;
+  }
+  
+  input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #f2f2f2;
+    width: 30%;
+    height: fit-content;
+    text-align: center;
+    border: 4px solid var(--primary-color);
+    padding: 0.4em;
+    font-size: 1em;
+  }
+  
+  .map {
+   display: none;
+  }
+}
+  
+.footer2 {
+    margin: 0em;
+    padding: 2em;
+    align-content: center;
+    color: #f2f2f2;
+  
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5em;
+    }
+  
+    .inner2 {
+      align-content: center;
+      text-align: center;
+      justify-items: auto;
+      margin: 0;
+  
+      div {
+        margin: 2em;
+      }
+    }
+}
+ 
+.footer3 {
+  margin: 0;
+  border-top: solid #aaa6a5;
+  box-sizing: border-box;
+  padding: 0.1em;
+  
+  div {
+    display: block;
+    margin: 3em;
+    align-content: center;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 1.2em;
+  
+    a {
+      color: #aaa6a5;
+      text-decoration: none;
+      text-align: center;
+    }
+  
+    span {
+      color: white;
+      background-color: black;
+      padding: 0.3em 0.6em;
+      border-radius: 3em;
+      font-family: AG Stencil;
+      margin: 0.2em 0.4em;
+    }
+  }
+}
+  
+.footerlogo {
+  display: none;
+}
+  
+/**Tablet mode**/
+@media only screen and (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu-close {
+    display: none;
+  }
+
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+
+  .navbar nav {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    background: none;
+    position: unset;
+
+    ul {
+      display: flex;
+    }
+
+    a {
+      color: black;
+      font-size: 1em;
+      padding: 0.1em 1em;
+    }
+
+    ul.primary-nav {
+      margin: 1em;
+      font-size: 1.2em;
+    }
+
+    ul.secondary-nav {
+      margin: 1em;
+      font-size: 1.2em;
+    }
+
+    li.current {
+      font-weight: bold;
+    }
+
+    li.register a {
+      color: var(--textiary-color);
+      border: 3px solid none;
+      border-radius: 5em;
+      font-weight: bold;
+      margin-top: -0.4em;
+      padding: 0.6em 1em;
+      background: white;
+      text-decoration: none;
+      text-align: center;
+      box-shadow: 0 4px 8px 0 grey;
+      display: inline-block;
+      align-self: center;
+
+      &:hover {
+        background: var(--primary-color);
+        color: white;
+      }
+    }
+  }
+
+  .footerlogo {
+    display: contents;
+  }
+
+  footer {
+    align-content: center;
+  }
+  .inner2 {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2em 3em;
+  }
+
+  .footer3 {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    text-align: center;
+
+    a {
+      margin: 0.6em 1.2em;
+      align-content: center;
+      text-align: center;
+      justify-content: space-between;
+      width: 60%;
+    }
+
+    span {
+      margin-left: 0.3em;
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  .contact2 {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      width: 60;
+    }
+  }
+}
+ 
